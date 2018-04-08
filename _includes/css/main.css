@@ -161,6 +161,7 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    background-color: #{{ site.color.primary }};
 }
 
 .navbar a:focus {
@@ -178,6 +179,14 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+.navbar-default .navbar-brand {
+  color: #{{ site.color.secondary }};
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #{{ site.color.third }};
 }
 
 section {
