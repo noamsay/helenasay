@@ -2,7 +2,8 @@
 layout: default
 modal-id: 6
 date: 2014-07-15
-img: submarine.png
+img: immobilier.png
+pdf: https://drive.google.com/file/d/18GabAK_T27_IFaEVoiqi_3t_RQN6FOnD/preview
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap

@@ -41,6 +41,7 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+    padding-bottom: 15px;
 }
 
 hr.star-light,
@@ -237,7 +238,8 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(,.9);
+/*    background: rgba(,.9);*/
+    background: rgba(0,101,168,0.7);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -471,7 +473,15 @@ footer .footer-below {
 }
 
 .navbar-nav>.active>a {
-    background-color: # !important;
+    background-color: #FCD670 !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #2c3e50;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #FCD670;
 }
 
 /* Fix modal mouse wheel issues */
@@ -483,4 +493,10 @@ footer .footer-below {
 
 .spacer{
     height: height in %;
+}
+
+.iframediv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
