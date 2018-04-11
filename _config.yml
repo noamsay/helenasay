@@ -38,7 +38,8 @@ color:
 footer:
   copyright: Dr. Henry Jekyll
   location: Location
-  social: Around the Web
+  social: Social
+  credits: Profiles
   #credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
@@ -47,11 +48,12 @@ social:
     url: https://www.facebook.com/helenasaywriter/
   - title: linkedin
     url: http://www.linkedin.com/in/helenasay
-
+  - title: twitter
+    url: https://www.facebook.com/helenasaywriter/
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: Paris
+  - line: Paris, FRANCE
 
 # Credits content
 credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
