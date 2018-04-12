@@ -256,7 +256,8 @@ section.success {
     opacity: 0;
 /*    margin: 20px;*/
 /*    background: rgba(,.9);*/
-    background: rgba(0,101,168,0.7);
+    /*background: rgba(0,101,168,0.7);*/
+    background: rgba(44,62,80,0.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
