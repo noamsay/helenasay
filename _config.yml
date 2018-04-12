@@ -1,13 +1,13 @@
 # Site settings
-title: Helena Say #Freelancer
+title: Helena Say
 header_title: Hello I'm Helena
 header_image: helena-header2-min.png
-email: your-email@domain.com
-url: https://example.github.io
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-keywords: "your keywords, separated by commas"
+email: contact@helenasay.com
+url: https://www.helenasay.com
+description: "Helena Say, Freelance French Writer / Rédactrice freelancer"
+keywords: "French Writer Freelance, Rédactrice, Rédactrice Web"
 skills: "I'm a French writer" #"Web Developer - Graphic Artist - User Experience Designer"
-meta_author: LastName FirstName
+meta_author: Helena Say
 
 # Google webmaster tools
 google_verify:
