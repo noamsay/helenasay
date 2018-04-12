@@ -13,7 +13,7 @@ p {
 }
 
 p.small {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a,
@@ -82,11 +82,12 @@ hr.star-primary:after {
 }
 
 header {
-    text-align: center;
+    text-align: left;
     color: #fff;
     /*background: #{{ site.color.primary }};*/
-        /*3 following lines added*/
+    /*3 following lines added*/
     background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url("img/{{ site.header_image }}") !important;
+    /*background-image: linear-gradient(-225deg, rgba(132,32,51,0.6) 0%, rgba(132,32,51,0.6) 50%), url("img/{{ site.header_image }}") !important;*/
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 50px;
@@ -94,7 +95,7 @@ header {
 
 header .container {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 200px; /*previous 50px*/
 }
 
 header img {
@@ -102,35 +103,41 @@ header img {
     margin: 0 auto 20px;
 }
 
+header .intro-text {
+  align-items: center;
+}
+
 header .intro-text .name {
     display: block;
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*text-transform: uppercase;*/
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+    font-family: 'Montserrat', serif;
     font-size: 2em;
     font-weight: 700;
 }
 
 header .intro-text .skills {
     font-size: 1.25em;
-    font-weight: 300;
+    font-weight: 400px;
+    font-family: 'Niconne', cursive;
 }
 
 @media(min-width:768px) {
     header .container {
-        padding-top: 200px;
-        padding-bottom: 100px;
+        padding-top: 100px; /* previous: 200*/;
+        padding-bottom: 400px; /*previous: 100*/;
     }
 
-    header .intro-text {
+/*    header .intro-text {
         padding-top: 200px;
-    }
+    }*/
 
     header .intro-text .name {
-        font-size: 2.75em; /*updated from 4.75*/
+        font-size: 2.5em; /*updated from 4.75*/
     }
 
     header .intro-text .skills {
-        font-size: 1.75em;
+        font-size: 1.5em;
     }
 }
 
@@ -191,7 +198,15 @@ header .intro-text .skills {
 }
 
 section {
-    padding: 100px 0;
+    padding: 70px 0;
+}
+
+#clients {
+  padding: 30px 0;
+}
+
+#testimonials {
+  padding-bottom: 10px;
 }
 
 section h2 {
@@ -521,8 +536,19 @@ footer .footer-below {
   padding: 10px;
   width: 60%;
   height: auto;
-  opacity: 0.5;
   margin: 0 auto;
+  opacity: 0.5;
+}
+
+.img-marketplace {
+  padding: 10px;
+  width: 35%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#fiverr {
+  width: 30%;
 }
 
 #client {
@@ -531,4 +557,96 @@ footer .footer-below {
 
 .client {
   justify-content: space-evenly;
+  padding: 10px;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+}
+
+.download-btn {
+  font-size: 16px;
+}
+
+/*TESTIMONIALS*/
+
+.col-center {
+  margin: 0 auto;
+  float: none !important;
+}
+.carousel {
+  margin: 50px auto;
+  padding: 0 70px;
+}
+.carousel .item {
+  color: #999;
+  font-size: 14px;
+    text-align: center;
+  overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+  width: 135px;
+  height: 135px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+}
+.carousel .img-box img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.carousel .testimonial {
+  padding: 30px 0 10px;
+}
+.carousel .overview {
+  font-style: italic;
+}
+.carousel .overview b {
+  text-transform: uppercase;
+  /*color: #7AA641;*/
+  color: {{ site.color.secondary }};
+}
+.carousel .carousel-control {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  top: 50%;
+  background: none;
+}
+.carousel-control i {
+  font-size: 68px;
+  line-height: 42px;
+  position: absolute;
+  display: inline-block;
+  /*color: rgba(0, 0, 0, 0.8);*/
+  color: {{ site.color.secondary }};
+  text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+  bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+  width: 10px;
+  height: 10px;
+  margin: 1px 3px;
+  border-radius: 50%;
+}
+.carousel-indicators li {
+  background: #999;
+  border-color: transparent;
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {
+  background: #555;
+  box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+
+.about-card {
+  margin: 10px;
 }
