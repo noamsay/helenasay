@@ -541,6 +541,16 @@ footer .footer-below {
   position: relative;
 }
 
+.marketplaces {
+  display: flex;
+  justify-content: center;
+}
+
+#marketplace {
+  padding: 0px;
+  display: inline;
+}
+
 .img-client {
   padding: 10px;
   width: 60%;
@@ -550,16 +560,16 @@ footer .footer-below {
 }
 
 .img-marketplace {
-  padding: 10px;
-  width: 35%;
+  /*padding: 10px;*/
+  width: 30%;
   height: auto;
-  margin: 0 auto;
+/*  margin: 0 auto;*/
 }
 
-#fiverr {
-  width: 30%;
+/*#fiverr {
+  width: 50%;
   opacity: 0.9;
-}
+}*/
 
 #client {
   padding: 0px;
