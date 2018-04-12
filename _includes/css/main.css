@@ -13,7 +13,7 @@ p {
 }
 
 p.small {
-    font-size: 18px;
+    font-size: 17px;
 }
 
 a,
@@ -247,11 +247,18 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
+/*    margin: 20px;*/
 /*    background: rgba({{ site.color.primary-rgb }},.9);*/
     background: rgba(0,101,168,0.7);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
+
+}
+
+#img-portfolio {
+  opacity: 0.9;
+/*  margin: 20px;*/
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
@@ -570,9 +577,6 @@ footer .footer-below {
   font-size: 16px;
 }
 
-#img-portfolio {
-  opacity: 0.9;
-}
 
 /*TESTIMONIALS*/
 
@@ -623,6 +627,11 @@ footer .footer-below {
   top: 50%;
   background: none;
 }
+
+.carousel .carousel-control:hover {
+  color: {{ site.color.third }};
+}
+
 .carousel-control i {
   font-size: 68px;
   line-height: 42px;
@@ -653,5 +662,5 @@ footer .footer-below {
 
 
 .about-card {
-  margin: 10px;
+  margin: 20px;
 }
