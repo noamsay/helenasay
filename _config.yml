@@ -30,8 +30,9 @@ color:
   primary: F6F6F6 #18bc9c #80B3FF
   #primary-rgb: "24,288,156" #"128,179,255"
   secondary: 2c3e50 #FD6E8A
+  secondary-bright: 6A65D8
   #secondary-dark: 233140 #A2122F
-  third: 842033 #F85F89 #44253D #FCD670
+  third: FCD670
 
 
 # Footer settings
