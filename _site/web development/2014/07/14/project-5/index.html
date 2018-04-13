@@ -54,8 +54,55 @@
     }();
     drift.SNIPPET_VERSION = '0.3.1';
     drift.load('whfircfbx96c');
-    </script>
+
     <!-- End of Async Drift Code -->
+    <!-- place this script tag after the Drift embed tag -->
+
+  (function() {
+    /* Add this class to any elements you want to use to open Drift.
+     *
+     * Examples:
+     * - <a class="drift-open-chat">Questions? We're here to help!</a>
+     * - <button class="drift-open-chat">Chat now!</button>
+     *
+     * You can have any additional classes on those elements that you
+     * would ilke.
+     */
+    var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
+    /* http://youmightnotneedjquery.com/#ready */
+    function ready(fn) {
+      if (document.readyState != 'loading') {
+        fn();
+      } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', fn);
+      } else {
+        document.attachEvent('onreadystatechange', function() {
+          if (document.readyState != 'loading')
+            fn();
+        });
+      }
+    }
+    /* http://youmightnotneedjquery.com/#each */
+    function forEachElement(selector, fn) {
+      var elements = document.querySelectorAll(selector);
+      for (var i = 0; i < elements.length; i++)
+        fn(elements[i], i);
+    }
+    function openSidebar(driftApi, event) {
+      event.preventDefault();
+      driftApi.sidebar.open();
+      return false;
+    }
+    ready(function() {
+      drift.on('ready', function(api) {
+        var handleClick = openSidebar.bind(this, api)
+        forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
+          el.addEventListener('click', handleClick);
+        });
+      });
+    });
+  })();
+</script>
 </head>
 
     <body id="page-top" class="index">
@@ -70,7 +117,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" id="#brand" href="#page-top">Helena Say</a>
+                <a class="navbar-brand" id="#brand" href="#page-top">Helena</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -247,12 +294,16 @@
                 <div class="col-xs-12 col-sm-6">
                   <div class="about-card">
                     <div class="text-justify">
-                      <p class="small">Hello, my name is Helena, I'm 29 years old and I have been a freelance writer for more than two years. Passionate about the French language, I gained a deep knowledge throughout my university studies. With a background in legal education, I am now fully dedicated to content writing. Particularly committed to the respect of the rules of writing, I strive to offer texts of quality, subtle and pleasant to read. </p>
+                      <p class="small">Hello, my name is Helena, I'm 29 years old and I have been a freelance writer for more than two years. Passionate about the French language, I gained a deep knowledge throughout my university studies. With a background in legal education, I am now fully dedicated to content writing. Particularly committed to the respect of the rules of writing, I strive to offer quality, subtle and pleasant to read texts. Check out my Fiverr profile: </p>
                     </div>
-                    <div class="text-center">
-                      <a target="_blank" href="https://drive.google.com/file/d/1UXVA0b3UHMfPH0Vf5mEGYGpiKENdzXtM/view?usp=sharing" class="btn btn-lg btn-outline download-btn">
+                    <div class="marketplaces-about-btn text-center">
+                      <!-- <a target="_blank" href="https://drive.google.com/file/d/1UXVA0b3UHMfPH0Vf5mEGYGpiKENdzXtM/view?usp=sharing" class="btn btn-lg btn-outline download-btn">
                         <i class="fa fa-download"></i> Download my CV in English
-                      </a>
+                      </a> -->
+                        <a target="_blank" href="http://www.fiverr.com/s/aspw2b" class="btn btn-marketplace">
+                        <img src="img/fiverr.png" class="img-marketplace">
+                        </a>
+
                     </div>
                   </div>
                 </div>
@@ -261,10 +312,13 @@
                     <div class="text-justify">
                       <p class="small">Je m’appelle Héléna, j’ai 29 ans et je suis rédactrice freelance depuis près de deux ans. Passionnée par la langue française, j’en ai acquis une profonde connaissance tout au long de mon cursus universitaire. Issue d’une formation juridique, je me consacre désormais pleinement à la rédaction de contenu. Particulièrement attachée au respect des règles de l’écriture, je m’efforce de proposer des textes de qualité, subtiles et agréables à lire. </p>
                     </div>
-                    <div class="text-center">
-                      <a target="_blank" href="https://drive.google.com/file/d/1aC6M36MskcGXOYOoXiGYv1vF3NDNoC-j/view?usp=sharing" class="btn btn-lg btn-outline download-btn">
-                          <i class="fa fa-download"></i> Téléchargez mon CV en Français
+                    <div class="marketplaces-about-btn text-center">
+                      <a target="_blank" href="https://www.malt.fr/profile/helenaberebi" class="btn btn-marketplace">
+                          <img src="img/malt.png" class="img-marketplace" >
                       </a>
+                     <!--  <a target="_blank" href="https://drive.google.com/file/d/1aC6M36MskcGXOYOoXiGYv1vF3NDNoC-j/view?usp=sharing" class="btn btn-lg btn-outline download-btn">
+                          <i class="fa fa-download"></i> Téléchargez mon CV en Français
+                      </a> -->
                     </div>
                   </div>
                 </div>
@@ -358,12 +412,13 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
-                        <h4>Location</h4>
-                        <p>
+                        <h4>Contact</h4>
+                        <a class="drift-open-chat btn btn-primary btn-contact" id="contact">Contact me</a>
+       <!--                  <p>
                             
                                 Paris, FRANCE <br>
 		                    
-                        </p>
+                        </p> -->
                     </div>
                     <div class="footer-col col-md-4">
                         <h4>Social</h4>
@@ -388,15 +443,15 @@
                     </div>
                     <div class="footer-col col-md-4">
                         <h4>Marketplaces</h4>
-                        <ul class="list-inline">
+                        <ul class="list-inline marketplace-ul" >
                             <li>
-                                <a target="_blank" href="https://www.malt.fr/profile/helenaberebi" class="btn-marketplace btn-outline-marketplace">
+                                <a target="_blank" href="https://www.malt.fr/profile/helenaberebi" class="btn btn-marketplace">
                                 <img src="img/malt.png" class="img-marketplace" >
                                </a>
                             </li>
                             <li>
-                                <a target="_blank" href="http://www.fiverr.com/s/aspw2b" class="btn-marketplace btn-outline-marketplace">
-                                <img src="img/fiverr.png" class="img-marketplace">
+                                <a target="_blank" href="http://www.fiverr.com/s/aspw2b" class="btn btn-marketplace">
+                                <img src="img/fiverr.png" class="img-marketplace" id="fiverr">
                               </a>
                             </li>
                         </ul>

@@ -92,7 +92,7 @@ header {
     text-align: left;
     color: #fff;
     /*3 following lines added*/
-    background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url("http://res.cloudinary.com/noamsay/image/upload/c_scale,w_836/v1523608412/helena-header2-min.png") !important;
+    background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url("https://res.cloudinary.com/noamsay/image/upload/c_scale,q_auto:good,w_876/v1523608412/helena-header2-min.png") !important;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 50px;
@@ -116,7 +116,7 @@ header .intro-text .name {
     display: block;
     /*text-transform: uppercase;*/
     /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-    font-family: 'Montserrat', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2em;
     font-weight: 700;
 }
@@ -124,7 +124,7 @@ header .intro-text .name {
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 400px;
-    font-family: 'Niconne', cursive;
+    font-family: 'Lora', serif;
 }
 
 @media(min-width:768px) {
@@ -314,22 +314,27 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
+/*    border: solid 2px #fff;*/
     /*color: #F6F6F6;*/
     color: #fff;
     /*background: #fff;*/
     background: #2c3e50;
 }
 
-.btn-outline-marketplace:hover,
-.btn-outline-marketplace:focus,
-.btn-outline-marketplace:active,
-.btn-outline-marketplace.active {
-    border: solid 2px #2c3e50;
+.btn-marketplace:hover,
+.btn-marketplace:focus,
+.btn-marketplace:active,
+.btn-marketplace.active {
+    /*border: solid 2px #F6F6F6;*/
     /*color: #F6F6F6;*/
-    color: #fff;
-    background: #fff;
+/*    color: #fff;*/
+    background: #FCD670;
     /*background: #2c3e50;*/
+}
+
+
+.marketplaces-about-btn {
+  margin-top: 25px;
 }
 
 .floating-label-form-group {
@@ -422,16 +427,31 @@ footer .footer-below {
     background: #FCD670;
 }
 
+#contact {
+  margin-top: 15px;
+}
+
+.btn-contact:hover,
+.btn-contact:active {
+  color: #2c3e50;
+  background: #FCD670;
+  font-weight: bold;
+}
+
+.marketplace-ul {
+  margin-top: 15px;
+}
+
 .btn-marketplace {
     display: inline-block;
-    width: 80px;
-    height: 50px;
+    width: 90px;
+    height: auto;
 /*    border: 2px solid #fff; */
 /*    border-radius: 100%;*/
     text-align: center;
-    font-size: 20px;
+/*    font-size: 20px;*/
     line-height: 45px;
-    background: #FCD670;
+    background: #F6F6F6;
 }
 
 .btn:focus,
@@ -439,6 +459,7 @@ footer .footer-below {
 .btn.active {
     outline: 0;
 }
+
 
 .scroll-top {
     z-index: 1049;
@@ -589,15 +610,14 @@ footer .footer-below {
 
 .img-marketplace {
   /*padding: 10px;*/
-  width: 80%;
+  width: 100%;
   height: auto;
 /*  margin: 0 auto;*/
 }
 
-/*#fiverr {
-  width: 50%;
-  opacity: 0.9;
-}*/
+#fiverr {
+  padding-bottom: 4px;
+}
 
 #client {
   padding: 0px;
@@ -629,7 +649,8 @@ footer .footer-below {
   padding: 0 70px;
 }
 .carousel .item {
-  color: #999;
+  /*color: #999;*/
+  color: 2c3e50
   font-size: 14px;
     text-align: center;
   overflow: hidden;
