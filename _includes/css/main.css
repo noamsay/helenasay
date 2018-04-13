@@ -84,10 +84,8 @@ hr.star-primary:after {
 header {
     text-align: left;
     color: #fff;
-    /*background: #{{ site.color.primary }};*/
     /*3 following lines added*/
-    background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url("img/{{ site.header_image }}") !important;
-    /*background-image: linear-gradient(-225deg, rgba(132,32,51,0.6) 0%, rgba(132,32,51,0.6) 50%), url("img/{{ site.header_image }}") !important;*/
+    background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url("{{ site.header_url }}") !important;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 50px;
