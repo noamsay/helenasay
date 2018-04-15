@@ -626,6 +626,7 @@ footer .footer-below {
 .client {
   justify-content: space-evenly;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .download {
