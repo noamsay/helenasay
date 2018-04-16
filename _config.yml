@@ -65,3 +65,6 @@ credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+aboutme-fr: "Je m’appelle Héléna, j’ai 29 ans et je suis rédactrice freelance depuis près de deux ans. Passionnée par la langue française, j’en ai acquis une profonde connaissance tout au long de mon cursus universitaire. Issue d’une formation juridique, je me consacre désormais pleinement à la rédaction de contenu. Particulièrement attachée au respect des règles de l’écriture, je m’efforce de proposer des textes de qualité, subtiles et agréables à lire."
+aboutme-eng: "Hello, my name is Helena, I'm 29 years old and I have been a freelance writer for more than two years. Passionate about the French language, I gained a deep knowledge throughout my university studies. With a background in legal education, I am now fully dedicated to content writing. Particularly committed to the respect of the rules of writing, I strive to offer quality, subtle and pleasant to read texts. Check out my Fiverr profile:"
