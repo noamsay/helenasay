@@ -1,4 +1,4 @@
-
+---
 title: Helena Say
 timezone: UTC
 collections:
@@ -18,8 +18,8 @@ description: Helena Say, Freelance French Writer / Rédactrice freelancer
 keywords: French Writer Freelance, Rédactrice, Rédactrice Web
 skills: I'm a French writer
 meta_author: Helena Say
-google_verify:
-bing_verify:
+google_verify: 
+bing_verify: 
 contact: static
 disqus_shortname: myshortname
 color:
