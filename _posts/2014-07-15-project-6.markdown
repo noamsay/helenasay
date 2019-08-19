@@ -1,14 +1,14 @@
 ---
-title: Project 2
-date: 2014-07-17 00:00:00 Z
+title: Project 6
+date: 2014-07-15 00:00:00 Z
 categories:
 - Articles
 layout: default
-modal-id: 2
-category-name: Enfance
-img: doudou-bebe.png
-pdf: https://drive.google.com/file/d/1MuehPYBzTdyW6_6REIMunXU40vjx7MHr/preview
-article: '"Les doudous de bébé"'
+modal-id: 6
+img: immobilier.png
+category-name: Immobilier
+pdf: https://drive.google.com/file/d/18GabAK_T27_IFaEVoiqi_3t_RQN6FOnD/preview
+article: '"Les étapes clés pour ouvrir une agence immobilière"'
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap

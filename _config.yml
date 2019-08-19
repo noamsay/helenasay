@@ -1,43 +1,32 @@
-# Site settings
+
 title: Helena Say
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 header_title: Hello I'm Helena
 header_image: helena-header2-min.png
 header_url: https://res.cloudinary.com/noamsay/image/upload/c_scale,q_auto:good,w_876/v1523608412/helena-header2-min.png
 header_fb: helena-fb-900-650.png
 email: contact@helenasay.com
 url: https://www.helenasay.com
-description: "Helena Say, Freelance French Writer / Rédactrice freelancer"
-keywords: "French Writer Freelance, Rédactrice, Rédactrice Web"
-skills: "I'm a French writer" #"Web Developer - Graphic Artist - User Experience Designer"
+description: Helena Say, Freelance French Writer / Rédactrice freelancer
+keywords: French Writer Freelance, Rédactrice, Rédactrice Web
+skills: I'm a French writer
 meta_author: Helena Say
-
-# Google webmaster tools
 google_verify:
-
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
-
-# Contact form:
-# - static : pass through formspree.io to validate email sending
-# - disqus : replace contact form by disqus thread
-# - comment the line below if you want to stick with the default PHP contact form
 contact: static
-
-# If you use disqus you need disqus shortname
-# https://help.disqus.com/customer/portal/articles/466208
 disqus_shortname: myshortname
-
-# Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: F6F6F6 #18bc9c #80B3FF
-  #primary-rgb: "24,288,156" #"128,179,255"
-  secondary: 2c3e50 #FD6E8A
+  primary: F6F6F6
+  secondary: 2c3e50
   secondary-bright: 6A65D8
-  #secondary-dark: 233140 #A2122F
   third: FCD670
-
-
-# Footer settings
 footer:
   copyright: Noam Say
   location: Contact
@@ -45,27 +34,28 @@ footer:
   credits: Marketplaces
   profile1: fiverr.png
   profile2: malt.png
-  #credits: Credits
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: facebook
-    url: https://www.facebook.com/helenasaywriter/
-  - title: linkedin
-    url: http://www.linkedin.com/in/helenasay
-  - title: twitter
-    url: https://www.facebook.com/helenasaywriter/
-
-# Postal address (add as many lines as necessary)
+- title: facebook
+  url: https://www.facebook.com/helenasaywriter/
+- title: linkedin
+  url: http://www.linkedin.com/in/helenasay
+- title: twitter
+  url: https://www.facebook.com/helenasaywriter/
 address:
-  - line: Paris, FRANCE
-
-# Credits content
-credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
-
-# Build settings
+- line: Paris, FRANCE
+credits: Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start
+  Bootstrap</a>.
 markdown: kramdown
 permalink: pretty
-
-aboutme-fr: "Je m’appelle Héléna, j’ai 29 ans et je suis rédactrice freelance depuis près de deux ans. Passionnée par la langue française, j’en ai acquis une profonde connaissance tout au long de mon cursus universitaire. Issue d’une formation juridique, je me consacre désormais pleinement à la rédaction de contenu. Particulièrement attachée au respect des règles de l’écriture, je m’efforce de proposer des textes de qualité, subtiles et agréables à lire."
-aboutme-eng: "Hello, my name is Helena, I'm 29 years old and I have been a freelance writer for more than two years. Passionate about the French language, I gained a deep knowledge throughout my university studies. With a background in legal education, I am now fully dedicated to content writing. Particularly committed to the respect of the rules of writing, I strive to offer quality, subtle and pleasant to read texts. Check out my Fiverr profile:"
+aboutme-fr: Je m’appelle Héléna, j’ai 29 ans et je suis rédactrice freelance depuis
+  près de deux ans. Passionnée par la langue française, j’en ai acquis une profonde
+  connaissance tout au long de mon cursus universitaire. Issue d’une formation juridique,
+  je me consacre désormais pleinement à la rédaction de contenu. Particulièrement
+  attachée au respect des règles de l’écriture, je m’efforce de proposer des textes
+  de qualité, subtiles et agréables à lire.
+aboutme-eng: 'Hello, my name is Helena, I''m 29 years old and I have been a freelance
+  writer for more than two years. Passionate about the French language, I gained a
+  deep knowledge throughout my university studies. With a background in legal education,
+  I am now fully dedicated to content writing. Particularly committed to the respect
+  of the rules of writing, I strive to offer quality, subtle and pleasant to read
+  texts. Check out my Fiverr profile:'
