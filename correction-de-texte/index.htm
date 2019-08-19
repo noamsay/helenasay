@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://helenasay.launchaco.com/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Helena Say</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Correction de Texte">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" href="https://www.launchaco.com/static/favicon.ico">
+    <link href="./helenasay_files/css" rel="stylesheet">
+    <link rel="stylesheet" href="./helenasay_files/AllTemplates.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./helenasay_files/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./helenasay_files/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./helenasay_files/favicon-16x16.png">
+    <link rel="manifest" href="./helenasay_files/site.webmanifest">
+  <style type="text/css">
+/*@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 400;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Medium.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 500;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-MediumItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Bold.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 700;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-BoldItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Black.woff2') format('woff2');
+}
+@font-face {
+  font-weight: 900;
+  font-style:  italic;
+  font-family: 'Inter-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-BlackItalic.woff2') format('woff2');
+}*/
+
+input[type=number] {
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color: blue;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*.logo {
+    font-size: calc(120% + 1vw);
+    line-height: 44px;
+    font-weight: 700;
+    font-family: Montserrat,sans-serif;
+    }*/
+
+.nav-link {
+  font-size: 14px;
+}
+</style>
+<script src="https://unpkg.com/vue/dist/vue.min.js"></script>
+</head>
+
+  <body class="font-elegant" cz-shortcut-listen="true">
+    <div class="pink-flat">
+      <!---->
+      <header class="header">
+        <div class="container-lrg">
+          <div class="flex col-12 spread"><a class=" primary-color launchaco-builder-hoverable "><span style="font-size: calc(120% + 1vw);line-height: 34px;font-weight: 700;text-decoration: none; font-family: "Montserrat,sans-serif";">Helena Say</span></a>
+          <div class="align-right" >
+            <a href="/#about" class="nav-link secondary-color mr1">A propos</a>
+            <a href="/#testimonial-1" class="nav-link secondary-color mr1">Recommandations</a>
+            <a href="/#pricing" class="nav-link secondary-color mr1">Tarif</a>
+            <a href="/#contact" class="nav-link secondary-color mr1">Contact</a>
+            <a href="/#commande" class="nav-link secondary-color mr1">Commande</a>
+          </div>
+        </div>
+      </header>
+      <section class="section">
+        <div class="container-lrg flex">
+          <div class="col-6 flex flex-column center-vertical mobile-text-center mb40">
+            <h1 class="heading primary-color launchaco-builder-hoverable"><span style="font-size: 42px; font-family: "Montserrat,serif";  ">Revision et Correction de Texte</span></h1>
+            <h2 class="subheading secondary-color mt20 launchaco-builder-hoverable">Je révise et corrige votre texte en 24h.</h2>
+
+            <div id="app" class="mt20">
+              <!-- <h2 class="subheading secondary-color mt10 launchaco-builder-hoverable">Combien de mots contient votre texte?</h2> -->
+               <form>
+                  <label class="subheading secondary-color mt20 launchaco-builder-hoverable" for="number">Votre texte contient  </label>
+                  <input type="number" id="number" class="text-center" v-model="number"/>
+                  <label class="subheading secondary-color mt10 launchaco-builder-hoverable" for="number"> mots.</label>
+                </form>
+                <div id="result">
+                  <p class="subheading secondary-color mt20 launchaco-builder-hoverable">Tarif pour {{ number }} mots: <b style="font-size: 28px;color: blue">{{ result }}</b> € TTC en <b style="font-size: 28px;color: blue">{{ time }}</b> h.<p>
+                </div>
+             </div>
+
+            <div class="mt40"><a href="https://noamsay.typeform.com/to/ZUE0jJ" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable mobile-text-center accent-bg primary-color"> <span style="font-size: 18px;font-weight: 900"> <b>Commander</b> </span></a></div>
+            <!---->
+          </div>
+          <div class="col-6 flex center-horizontal center-vertical">
+            <div class="launchaco-builder-hoverable">
+              <div class=""><img src="./helenasay_files/35d29f22-33fc-4460-9fb9-11fc9299f16d.png" alt="Screenshot of small App" class="custom-img"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="about" class="section pink-white">
+      <div class="container text-center mb75">
+       <div class="col-12 text-center">
+          <h4 class="heading primary-color launchaco-builder-hoverable"><span style="font-family: "Montserrat,serif"">A propos</span></h4>
+       </div>
+      </div>
+      <div class="container col-12 text-center">
+        <p style="line-height: 2;">Bonjour, je suis Helena, j'ai 30 ans et je suis rédactrice freelance. <br> Issue d’une formation juridique, j'ai decidé il y a trois ans de me consacrer à ma passion: la langue française. Présente sur diverses plateformes de freelancing en ligne, j'ai travaillé avec plus d'une centaine de professionels du monde entier en les aidant a developper du contenu de qualité en français.</p>
+      </div>
+    </section>
+
+
+    <section id="testimonial-1" class="section pink-white" sitemeta="[object Object]" activepage="Landing">
+      <div class="container text-center mb75">
+       <div class="col-12 text-center">
+          <h4 class="heading primary-color launchaco-builder-hoverable"><span style="font-family: "Montserrat,serif"">Recommendations</span></h4>
+       </div>
+      </div>
+      <div class="container-lrg">
+        <div class="slideshow text-center"><input type="radio" name="ss1" id="ss1-item-0" checked="checked" class="slideshow-bullet">
+
+          <div class="slideshow-item">
+            <div class="slideshow-item-content">
+              <blockquote class="container col-12 heading-sml primary-color launchaco-builder-hoverable" >
+              <blockquote class="heading-sml primary-color launchaco-builder-hoverable"><span style="font-size: 30px; font-style: italic; font-family: "Montserrat,serif"; "> "Le travail d'Helena est remarquable. Au delà d'un vrai professionnalisme, Helena a su répondre à mes attentes tout en y mêlant sa subtilité et sa créativité. D'ailleurs je lui ai tout de suite transmis un autre travail. Je la recommande vivement.</span></blockquote>
+              <div class="mt20">
+                <!---->
+                <p class="span secondary-color mb10 launchaco-builder-hoverable">Lauren</p> <span class="span secondary-color launchaco-builder-hoverable">Créatrice et bloggeuse</span>
+              </div>
+            </div>
+            <label for="ss1-item-1" class="slideshow-nav slideshow-nav-previous accent-bg"></label> <label for="ss1-item-1" class="slideshow-nav slideshow-nav-next accent-bg"></label>
+          </div><input type="radio" name="ss1" id="ss1-item-1" checked="checked" class="slideshow-bullet">
+
+          <div class="slideshow-item">
+            <div class="slideshow-item-content">
+              <blockquote class="container col-12 heading-sml primary-color launchaco-builder-hoverable">
+              <blockquote class="heading-sml primary-color launchaco-builder-hoverable"><span style="font-size: 30px; font-style: italic; font-family: "Montserrat,serif"; ">"Excellente réactivité, aucune faute d'orthographe, les mots-clés bien placés, un seul retour nécessaire. Très bonne prestation !</span></blockquote>
+              <div class="mt20">
+                <!---->
+                <p class="span secondary-color mb10 launchaco-builder-hoverable">Eric Faucon</p> <span class="span secondary-color launchaco-builder-hoverable">Consultant web marketing</span>
+              </div>
+            </div> <label for="ss1-item-0" class="slideshow-nav slideshow-nav-previous accent-bg"></label> <label for="ss1-item-0" class="slideshow-nav slideshow-nav-next accent-bg"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--     <section id="testimonial-1" class="section pink-white" sitemeta="[object Object]" activepage="Landing">
+      <div class="container text-center">
+        <div class="col-12">
+          <blockquote class="heading-sml primary-color launchaco-builder-hoverable"><span style="font-size: 30px; font-style: italic; font-family: "Montserrat,serif"; ">"Excellente réactivité, aucune faute d'orthographe, les mots-clés bien placés, un seul retour nécessaire. Très bonne prestation !</span></blockquote>
+          <div class="mt20">
+            <p class="span secondary-color mb10 launchaco-builder-hoverable">Eric Faucon</p> <span class="span secondary-color launchaco-builder-hoverable">Consultant web marketing</span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+    <section id="pricing" class="section pink-accent" sitemeta="[object Object]" activepage="Landing">
+      <div class="container text-center mb75">
+        <div class="col-12 text-center">
+          <h4 class="heading primary-color launchaco-builder-hoverable"><span style="font-family: "Montserrat,serif"">Tarif</span></h4>
+          <p class="subheading secondary-color mt20 launchaco-builder-hoverable">15 Euros les 300 mots. Puis 5 € par 100 mots supplémentaire.</p>
+        </div>
+      </div>
+      <div class="container flex center-vertical">
+        <div class="col-6">
+          <div class="card pad30 launchaco-builder-hoverable">
+            <div class="mb20">
+              <div class="text-center" ><b class="bold primary-color"></b>
+                <div class="mt10"><b class="heading primary-color"><span style="font-family: "Montserrat,serif"">€15</span></b> <span class="paragraph secondary-color" >/ 300 mots</span></span></div>
+              </div>
+              <ul class="mt20">
+                <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill mr20 noshrink">
+                    <g transform="translate(4.000000, 5.000000)">
+                      <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                    </g>
+                  </svg> <span class="span secondary-color">Orthographe </span></li>
+                <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill mr20 noshrink">
+                    <g transform="translate(4.000000, 5.000000)">
+                      <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                    </g>
+                  </svg> <span class="span secondary-color">Grammaire</span></li>
+                <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill mr20 noshrink">
+                    <g transform="translate(4.000000, 5.000000)">
+                      <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                    </g>
+                  </svg> <span class="span secondary-color">Syntaxe</span></li>
+                <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill mr20 noshrink">
+                    <g transform="translate(4.000000, 5.000000)">
+                      <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                    </g>
+                  </svg> <span class="span secondary-color">Qualité globale du texte</span></li>
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill mr20 noshrink">
+                    <g transform="translate(4.000000, 5.000000)">
+                      <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                    </g>
+                  </svg> <span class="span secondary-color">Suggestion d'amélioration</span></li>
+              </ul>
+            </div>
+            <!---->
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section id="contact" class="section pink-white" sitemeta="[object Object]" activepage="Landing">
+      <!---->
+      <div class="container text-center">
+        <div class="col-12">
+          <h4 class="heading primary-color launchaco-builder-hoverable"><span style="font-family: "Montserrat,serif"">Contact</span></h4>
+
+ <!--          <div class="typeform-widget" data-url="https://noamsay.typeform.com/to/M9Dk1U" data-transparency="50" data-hide-headers=true data-hide-footer=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> -->
+
+
+            <div class="typeform-widget" data-url="https://noamsay.typeform.com/to/M9Dk1U" data-transparency="50" data-hide-headers=true style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="commande" class="section pink-white" sitemeta="[object Object]" activepage="Landing">
+      <!---->
+      <div class="container text-center">
+        <div class="col-12">
+          <h4 class="heading primary-color launchaco-builder-hoverable"><span style="font-family: "Montserrat,serif"">Commande</span></h4>
+          <p class="paragraph mt20 secondary-color mt20 launchaco-builder-hoverable">Cliquez sur commander pour remplir le bon de commande et procéder au paiement en ligne sécurisé via Stripe (1 minute)</p>
+          <div class="mt40"><a href="https://noamsay.typeform.com/to/ZUE0jJ" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable mobile-text-center accent-bg primary-color"> <span style="font-size: 18px;font-weight: 900"> Commander</span></a></div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+<!--
+    <section id="CTA" class="section pink-white">
+      <div class="container text-center mb75">
+        <div class="col-12 text-center">
+          <h4 class="heading primary-color launchaco-builder-hoverable">Commandez</h4>
+          <p class="subheading secondary-color mt20 launchaco-builder-hoverable">Selectionnez le nombre de mots de votre texte et commandez</p>
+        </div>
+      </div>
+        <div class="container flex center-vertical">
+          <div class="col-6">
+            <div class="card pad30 launchaco-builder-hoverable">
+              <div class="mb20">
+                <div id="app" class="text-center">
+                  <b class="bold primary-color">Nombre de mots?</b>
+                  <form>
+                    <input type="text" id="number" class="text-center" v-model="number"/>
+                  </form>
+                  <br />
+                  <div id="result">{{ result }} € TTC</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section> -->
+
+    <script>
+        new Vue({
+            el:'#app',
+            data : {
+                  number : 300
+             },
+            computed: {
+                  result: function(){
+                      result = this.number *  0.05;
+                      // return (result <= 15) ? 15 : result;
+                      return Math.round(result);
+                  },
+                  time: function(){
+                    time = (this.number > 10000) ? '72' : (this.number > 5000) ? '48' : '24';
+                    return time;
+                  }
+              }
+        });
+    </script>
+
+
+    <footer id="footer-3" class="section text-center pink-flat" sitemeta="[object Object]" activepage="Landing">
+      <div class="container col-12">
+        <!---->
+        <div>
+          <!---->
+          <!---->
+          <!---->
+        </div>
+        <div class="mt50"><span class="span secondary-color">©</span> <span class="span secondary-color">Helena Say - par Evolvis Digital SAS - SIRET: 83281177200017</span></div>
+      </div>
+    </footer>
+
+
+</body>
+<loom-container id="lo-engage-ext-container"><loom-shadow classname="resolved"></loom-shadow></loom-container></html>
