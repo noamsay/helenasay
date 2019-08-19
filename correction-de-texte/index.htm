@@ -105,20 +105,30 @@ input[type=number] {
       <!---->
       <header class="header">
         <div class="container-lrg">
-          <div class="flex col-12 spread"><a class=" primary-color launchaco-builder-hoverable "><span style="font-size: calc(120% + 1vw);line-height: 34px;font-weight: 700;text-decoration: none; font-family: "Montserrat,sans-serif";">Helena Say</span></a>
-          <div class="align-right" >
-            <a href="/#about" class="nav-link secondary-color mr1">A propos</a>
-            <a href="/#testimonial-1" class="nav-link secondary-color mr1">Recommandations</a>
-            <a href="/#pricing" class="nav-link secondary-color mr1">Tarif</a>
-            <a href="/#contact" class="nav-link secondary-color mr1">Contact</a>
-            <a href="/#commande" class="nav-link secondary-color mr1">Commande</a>
-          </div>
+          <div class="flex col-12 spread"><a href="/" class=" primary-color launchaco-builder-hoverable "><span style="font-size: calc(120% + 1vw);line-height: 34px;font-weight: 700;text-decoration: none; font-family: "Montserrat,sans-serif";">Helena Say</span></a>
+            <a href="#main-menu" id="menu" class="menu-toggle">
+              <b class="nav-link mr0 secondary-color">☰</b>
+            </a>
+            <nav id="main-menu" role="navigation" class="main-menu">
+              <a href="#" id="main-menu-close" class="menu-close">
+                <span class="bold">✕</span>
+              </a>
+              <div class="align-right" >
+                <a href="/#about" class="nav-link secondary-color mr1">À propos</a>
+                <a href="/#testimonial-1" class="nav-link secondary-color mr1">Recommandations</a>
+                <a href="/#pricing" class="nav-link secondary-color mr1">Tarif</a>
+                <a href="/#contact" class="nav-link secondary-color mr1">Contact</a>
+                <a href="/#commande" class="nav-link secondary-color mr1">Commande</a>
+              </div>
+            </nav>
+
+
         </div>
       </header>
       <section class="section">
         <div class="container-lrg flex">
           <div class="col-6 flex flex-column center-vertical mobile-text-center mb40">
-            <h1 class="heading primary-color launchaco-builder-hoverable"><span style="font-size: 42px; font-family: "Montserrat,serif";  ">Revision et Correction de Texte</span></h1>
+            <h1 class="heading primary-color launchaco-builder-hoverable"><span style="font-size: 42px; font-family: "Montserrat,serif";  ">Révision et Correction de Texte</span></h1>
             <h2 class="subheading secondary-color mt20 launchaco-builder-hoverable">Je révise et corrige votre texte en 24h.</h2>
 
             <div id="app" class="mt20">
@@ -129,7 +139,7 @@ input[type=number] {
                   <label class="subheading secondary-color mt10 launchaco-builder-hoverable" for="number"> mots.</label>
                 </form>
                 <div id="result">
-                  <p class="subheading secondary-color mt20 launchaco-builder-hoverable">Tarif pour {{ number }} mots: <b style="font-size: 28px;color: blue">{{ result }}</b> € TTC en <b style="font-size: 28px;color: blue">{{ time }}</b> h.<p>
+                  <p class="subheading secondary-color mt20 launchaco-builder-hoverable">Tarif pour {{ number }} mots : <b style="font-size: 28px;color: blue">{{ result }}</b> € TTC en <b style="font-size: 28px;color: blue">{{ time }}</b> h.<p>
                 </div>
              </div>
 
@@ -148,11 +158,11 @@ input[type=number] {
     <section id="about" class="section pink-white">
       <div class="container text-center mb75">
        <div class="col-12 text-center">
-          <h4 class="heading primary-color launchaco-builder-hoverable"><span style="font-family: "Montserrat,serif"">A propos</span></h4>
+          <h4 class="heading primary-color launchaco-builder-hoverable"><span style="font-family: "Montserrat,serif"">À propos</span></h4>
        </div>
       </div>
       <div class="container col-12 text-center">
-        <p style="line-height: 2;">Bonjour, je suis Helena, j'ai 30 ans et je suis rédactrice freelance. <br> Issue d’une formation juridique, j'ai decidé il y a trois ans de me consacrer à ma passion: la langue française. Présente sur diverses plateformes de freelancing en ligne, j'ai travaillé avec plus d'une centaine de professionels du monde entier en les aidant a developper du contenu de qualité en français.</p>
+        <p style="line-height: 2;">Bonjour, je m'appelle Helena, j'ai 30 ans et je suis rédactrice freelance. <br> Issue d’une formation juridique, j'ai decidé il y a trois ans de me consacrer à ma passion : la langue française. Présente sur diverses plateformes de freelancing en ligne, j'ai aidé plus d'une centaine de professionnels du monde entier à créer du contenu de qualité en français.</p>
       </div>
     </section>
 
@@ -160,7 +170,7 @@ input[type=number] {
     <section id="testimonial-1" class="section pink-white" sitemeta="[object Object]" activepage="Landing">
       <div class="container text-center mb75">
        <div class="col-12 text-center">
-          <h4 class="heading primary-color launchaco-builder-hoverable"><span style="font-family: "Montserrat,serif"">Recommendations</span></h4>
+          <h4 class="heading primary-color launchaco-builder-hoverable"><span style="font-family: "Montserrat,serif"">Recommandations</span></h4>
        </div>
       </div>
       <div class="container-lrg">
@@ -181,7 +191,7 @@ input[type=number] {
           <div class="slideshow-item">
             <div class="slideshow-item-content">
               <blockquote class="container col-12 heading-sml primary-color launchaco-builder-hoverable">
-              <blockquote class="heading-sml primary-color launchaco-builder-hoverable"><span style="font-size: 30px; font-style: italic; font-family: "Montserrat,serif"; ">"Excellente réactivité, aucune faute d'orthographe, les mots-clés bien placés, un seul retour nécessaire. Très bonne prestation !</span></blockquote>
+              <blockquote class="heading-sml primary-color launchaco-builder-hoverable"><span style="font-size: 30px; font-style: italic; font-family: "Montserrat,serif"; ">"Excellente réactivité, aucune faute d'orthographe, les mots-clés bien placés, un seul retour nécessaire. Très bonne prestation !"</span></blockquote>
               <div class="mt20">
                 <!---->
                 <p class="span secondary-color mb10 launchaco-builder-hoverable">Eric Faucon</p> <span class="span secondary-color launchaco-builder-hoverable">Consultant web marketing</span>
@@ -208,7 +218,7 @@ input[type=number] {
       <div class="container text-center mb75">
         <div class="col-12 text-center">
           <h4 class="heading primary-color launchaco-builder-hoverable"><span style="font-family: "Montserrat,serif"">Tarif</span></h4>
-          <p class="subheading secondary-color mt20 launchaco-builder-hoverable">15 Euros les 300 mots. Puis 5 € par 100 mots supplémentaire.</p>
+          <p class="subheading secondary-color mt20 launchaco-builder-hoverable">15 € les 300 mots. Puis 5 € par 100 mots supplémentaires.</p>
         </div>
       </div>
       <div class="container flex center-vertical">
